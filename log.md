@@ -1,5 +1,29 @@
 # 100 Days Of Code - Log
 
+### Day 0: February 19, 2019 
+
+**Today's Progress**: Discussed programming with Max. 
+
+**Thoughts:** Starting over (heh, again) with the 100 Days of Code challenge. Partly of this delay is that I was working on other issues with work, and wanted to make sure I had the time for this blog. A few things I worked on the past month. 
+
+1. Wrote a handy Python script that sorts data from a CSV file and adds the files into a tar file
+
+2. A few months ago I wrote something larger for work and it worked with the Google Sheets API pulling down data for reporting
+
+3. Learning more about coding challenges, I'm involved with a weekly Python exercises (a few cycles behind on this but I'm catching up)
+
+4. Trying to use Python more and more at work, really you're not going to find a job doing what you want, you need to make it what you want
+
+Going forward for this log/blog, I'm going to be adding smaller snippest of code, shorter updates, to keep on track daily. 
+
+You can also see my [old log](https://github.com/rfreiberger/100-days-of-code/blob/master/log_old.md) here. 
+
+
+
+
+
+## Templates
+
 ### Day 0: February 30, 2016 (Example 1)
 ##### (delete me or comment me out)
 
