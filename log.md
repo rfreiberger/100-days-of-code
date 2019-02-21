@@ -1,5 +1,42 @@
 # 100 Days Of Code - Log
 
+### Day 1: February 20, 2019
+
+**Today's Progress**: Refactoring and Matching Pairs. 
+
+**Thoughts:** I have written a 200~ line script for work but after testing this today, I felt it could be done better. There's some limitations in how it runs and like to add some features. 
+
+Also I've been thinking more about the question Max brought up and have some ideas who to get this working. 
+
+The question was the following:
+
+Given a line, how could you tell if the pairs (defined by `({[` or `)}[` are matching, in other words closed. 
+
+So I thought about what you really care about is just finding out of both sides are in pairs (or two's). What about if you did a simple match of items on the string? 
+
+```
+>>> foo = "(hello))"
+>>> print(foo.count("("))
+1
+>>> print(foo.count(")"))
+2
+>>> left_bracket = foo.count("(")
+>>> right_bracket = foo.count(")")
+>>> if left_bracket == right_bracket:
+...     print("matching set")
+... else:
+...     print("mis-match set")
+...
+mis-match set
+>>>
+```
+This might work but you need to do a few more things, one issue is you need to assume there will be multiple lines to check. Then you need to know which line was successful or has a problem. 
+
+Also the given amount of brackets will be three types (for now), and there could be brackets entered into the string as part of the string. 
+
+I'll need to come up with a solution for this, right now I'm thinking of adding this to a dictionary and then printing out the results. 
+
+
 ### Day 0: February 19, 2019 
 
 **Today's Progress**: Discussed programming with Max. 
