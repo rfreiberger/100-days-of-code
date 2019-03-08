@@ -1,5 +1,90 @@
 # 100 Days Of Code - Log
 
+### Day 15: March 6, 2019
+
+**Today's Progress**: Reading documents
+
+**Thoughts**: Part of working in IT or any field with constantly changing technology is reading. I actually enjoy reading but I find that I have to dig around to find the documents that are easy to read. Part of the problem is many documents are written pretty sloppy, or they assume you know all of the prerequisites. Since I'm learning about [Apache Proxy](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html) I found the following guides which have been pretty helpful. 
+
+* [Digital Ocean - Apache Virtual Hosts](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-7)
+* [Digital Ocean - Apache TLS SSL](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-apache-for-centos-7)
+* [Digital Ocean - Apache Proxy](https://www.digitalocean.com/community/tutorials/how-to-use-apache-as-a-reverse-proxy-with-mod_proxy-on-centos-7)
+
+### Day 14: March 5, 2019
+
+**Today's Progress**: Working with Helper Script
+
+**Thoughts**: I am using my script to help with my work and send this over to my co-worker who said it's working as well. He did find a problem which is a bit unusual. The script is command line based and you need to download a CSV file then add this file name to the command arguments as `python ./myscript -f foo.csv`. The issue he found is that if the CSV file has spaces in the name `my download.csv` his terminal wouldn't see this space. Not sure why this failed but on two other users, this wasn't an issue. 
+
+The better fix might be to make the script use the Gspread module and bypass this downloading all together. 
+
+### Day 13: March 4, 2019
+
+**Today's Progress**: Refactoring Helper Script
+
+**Thoughts**: I wrote this simple script a few weeks ago and going to work on refactoring this to use a Google API module which is [Gspread](https://pypi.org/project/gspread/). The issue I found is that the Google Sheet is downloaded as a list of lists (heh, that sounds weird but once you see it, makes sense). 
+
+I also found some tools that would also work out for this. 
+
+[Agate](https://agate.readthedocs.io/en/1.6.1/)
+
+You could also use Pandas but I think this is a bit more complex for a simple task. 
+
+[Pandas Tutorial](https://data36.com/pandas-tutorial-1-basics-reading-data-files-dataframes-data-selection/)
+
+### Day 12: March 3, 2019
+
+**Today's Progress**: Oncall pt 2
+
+**Thoughts**: Second day of oncall, I found out I need to learn more about [Elasticsearch](https://www.elastic.co/), this is part of our Kibana logging tool. Elasticsearch makes up for "E" in the [ELK Stack](https://www.elastic.co/elk-stack). Again, this is more about researching than coding. But I think I could connect to Kibana for stats if I could write a script to curl various links in Kibana for stats. 
+
+### Day 11: March 2, 2019
+
+**Today's Progress**: Oncall 
+
+**Thoughts**: Today I'm oncall for work and my day is spent mostly checking issues. I was thinking about writing some scripts that might help out the team. I'm not sure what I would automate but I think if we had a web frontend for the dashboars or other tools, that might help the team. 
+
+### Day 10: March 1, 2019
+
+**Today's Progress**: Looking forward
+
+**Thoughts**: While working on this large upgrade project, I've been overwhelmed with the amount of details I'm gathering. It's a bit like I'm finding a bunch of information but not sure if it's important or will it be something critical later. To give an example of this, currently my mindmap has about 100 points, plus 100's of lines in my markdown notes about the software and details. I still haven't completed the rest of the work going over the Apache component yet. 
+
+In cases where it's just a ball of wires to unravel, it might be easier to simple start over. This is something I've taken about writing code that is either sloppy or not documented well. Often times it's easier to look at something and spend hours trying to [reverse engineer](https://en.wikipedia.org/wiki/Reverse_engineering) in order to understand how it worked. But when you're building something new, you might not want to waste time figuring out how something was built, and just get started building it new from scratch. 
+
+I learned this lesson a few times when I worked with Perl code at another job. If you're not familar with [Perl](https://www.perl.org/) it's a very flexible programming language that was popular a few years ago, but now taken over by [Python](https://www.python.org/). With Perl, it's common to find people doing the same thing, in many different ways, which is really the oppsite of how Python programming is done. So when I would look at someone's Perl code, I would go back and decide it's simply easier to write the program from scratch. It's faster to get things done looking forward, instead of trying to figure out why something did something they did with an install a few years ago. 
+
+### Day 9: February 28, 2019
+
+**Today's Progress**: Breaking down the large problems
+
+**Thoughts**: At work I'm tasked with this large project of updating and installing our [Atlassian JIRA](https://www.atlassian.com/software/jira). JIRA for the most part is a Java application, running Tomcat (hosting the Java code for a web app), then behind Apache Proxy for SSL/TLS. It's pretty straight forward but I ran into so many issues with the upgrade, (note - we're a few revisions behind current). Given that you're faced with so many spinning wheels and switches to flip how can you wrap around this project? 
+
+Honestly at first I was very confused. I have only installed applications that were straight forward, following the instructions or working with a engineer from the software vendor for help in extreme cases. Also I was used to working with larger companies like Microsoft that if the first tier of support could not fix the issue, the problem was escalated. 
+
+Once I realized our vendor was a bit different, I started to rethink my challenge. If I cannot find the help I need, at least I could note how things work and solve them myself. I started to take notes on the problem, and making sure I was clean which step was taken for which part. If I tried a solution for the problem, I would note if it worked or not, so I didn't repeat my work. Another help was looking at the problem from a [mindmap](https://en.wikipedia.org/wiki/Mind_map) which helped me see the connections between what I was doing and what needed to be done. 
+
+It's not easy, and I faced hours of research, testing, and yes failures, but I'm getting closer to solving the problem. I would recommend that if you're faced with a complex problem, step back, look at the big picture, then slowly zoom in.
+
+### Day 8: February 27, 2019
+
+**Today's Progress**: More focus on small coding bits
+
+**Thoughts**: I've been typically heavily focused on the larger scale of writing a script or short program. With my friends we're planning to create this simple game tracker for playing a pen and paper RPG game. 
+
+So it's easy to think of sitting down for a few solid hours and working on this project. Well, it does sound easy but if you figure we're all working, taking care of the jobs and family, it's much more difficult. Much like the coding practice that helps the most, you need to think of smaller chunks of study time and more frequent instead of spending time in one large block. 
+
+### Day 7: February 26, 2019
+
+**Today's Progress**: Automation at work
+
+**Thoughts**: I have written this script with the idea of making my work easier, but I found some issues which I would like to fix, since they are not that difficult to resolve. 
+
+* Allow the script to SCP the files directly to the jump host (reduces another step)
+* Use the name of the branch instead of the user name (this makes a simpler name of the file)
+
+Hopefully I'll have these fixed shortly! 
+
 ### Day 6: February 25, 2019
 
 **Today's Progress**: Less time but more valued 
